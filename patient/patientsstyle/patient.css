@@ -1,0 +1,181 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+    
+}
+
+/*  four image containers  */ 
+.column {
+    float:left;
+    width: 25%;
+    padding: 5px;
+    
+  }
+  
+  /* Clear floats after image containers*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+ }
+
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+   
+
+
+.row1 {
+    padding: 40px 0;
+} 
+
+.postdes h3 {
+    font-size: 50px;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(27, 97, 27);
+}
+
+.write{
+   /*bottom: 30px;
+    right: 45px;
+    padding-top: 20px ;
+    padding-bottom: 60px;
+    right: 35px;
+    text-align: center;
+    position: relative;*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 60px;
+    }
+button{
+    background-color: #18f98f;
+    border: none;
+   position: absolute;
+    text-align: center;
+   /* transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:hover{
+   color: white;
+   
+}
+
+
+#div1 {
+     padding:0 20px;
+    float: left;
+}
+#div4 {
+    padding:0 20px;
+    min-width:450px;
+    float : left;
+}
+
+#div2 {
+    padding:0 20px;
+    float: left;
+}
+
+.container{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   }
+.testimonial{
+    position: relative ;
+    max-width: 850px;
+    width: 100%;
+    padding: 50px 0;
+    overflow: hidden;
+   background-color: rgb(177, 227, 177);
+   
+}
+.testimonial .image{
+    height:17%;
+    width: 17%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonial .slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px ;
+}
+.slide p{
+    text-align: center;
+    padding:0 100px ;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+.slide .quote-icon{
+    font-size: 30px;
+    color: #4070f4;
+}
+.slide .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details .name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.details .problem{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+/* swiper button */
+.nav-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.nav-btn::hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+
+}
+.swiper-pagination-bullet{
+    background-color: rgba(0, 0, 0, 0.4) ;
+}
+.swiper-pagination-bullet-active {
+    background-color: #4070f4 ;
+}
+@media screen and (max-width: 768px){
+    .slide p{
+        padding: 0 20px;
+    }
+     .nav-btn{
+    display: none;
+}
+}
+
